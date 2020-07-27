@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1594125186 source:/home/gabriel/Documentos/programacion_cplusplus/programas_trabajo/agenda_personal/main.cpp
+	<iostream>
+	<iomanip>
+

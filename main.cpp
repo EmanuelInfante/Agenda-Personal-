@@ -1,3 +1,7 @@
+/* A titulo personal esta agenda de contactos tiene varias caracteristicas, pero como explicacion breve de la misma se basa en guardar datos de los 
+contactos en la memoria RAM.Posee cualidades de inclusion de contactos, tambien tiene opciones para que el usuario introduzca los contactos 
+(nombre, numero de telefono y correo),ademas de despues hacerle ver los contactos en una lista alfabeticamente ordenados y si desea borrar alguno de
+ ellos facilmente lo puede hacer desde el menu principal. No obstante se procede a iniciar con el programa */
 #include <iostream>
 #include <iomanip>//setpresition()
 
@@ -53,11 +57,21 @@ int main()
         cout << "Ingrese el número de la opción correspondiente: ";
 
         int opcion;
-        cin >> opcion;
+		//Declaramos un auxiliar para verificar si los datos son validos 
+		float opcionFloat;
+		
+		
+        cin >> opcionFloat;
+        opcion=opcionFloat;
         cin.ignore();
-
-        cls();
-
+//Si son flotantes implica que ingreso un numero con coma flotante
+	if (opcion != opcionFloat )
+	{
+	        cls();
+	        cout<< "Ingresaste un numero decimal, ingresa un valor valido";
+	        continue;
+	}
+	cls ();
         switch(opcion)
         {
         case 1:
